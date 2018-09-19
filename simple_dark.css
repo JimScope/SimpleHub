@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/**
+ * Created by Heimdall23
+ */
+
+:root {
+  --fore-color: #ddd;
+  --back-color: #2d3035;
+  --secondary-back-color: #212326;
+  --text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  --border-blockquote-color: #343434;
+  --border-table-color: #141414;
+  --secondary-border-table-color: #dfe2e5;
+  --a-link-color: #00c853;
+  --a-visited-color: #ff9e80;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--back-color);
+  -webkit-text-size-adjust: 100%;
+  font-family: Roboto Thin, helvetica, arial;
+  line-height: 1.5;
+}
+
+body {
+  padding: 8px;
+  word-wrap: break-word;
+  color: var(--fore-color);
+  margin: 0;
+}
+
+/* image */
+img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--a-link-color);
+}
+
+a:visited {
+  color: var(--a-visited-color);
+}
+
+
+/* code */
+pre {
+    padding: 16px;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: var(--secondary-back-color);
+    border-radius: 4px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: auto;
+}
+
+body pre>code {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    background: transparent;
+    border: 0;
+    word-break: normal;
+}
+
+/* table */
+table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
+
+table tr {
+    border-top: 1px solid;
+    border-color: var(--border-table-color);
+}
+
+table th, table td{
+    padding: 6px 13px;
+    border: 1px solid;
+    border-color: var(--secondary-border-table-color);
+}
+
+/* list */
+ul, ol {
+    padding-left: 2em;
+}
+
+p, blockquote, ul, ol, dl, table, pre {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+p, blockquote, ul, ol, dl, table {
+  text-shadow: var(--text-shadow);
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* blockquote */
+blockquote {
+    padding: 0 1em;
+    color: var(--secondary-back-color);
+    border-left: 0.25em solid;
+    border-color: var(--border-blockquote-color)
+}
