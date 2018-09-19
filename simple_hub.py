@@ -19,7 +19,10 @@
 #
 #
 import glob
-from gfm import gfmdef load_file(the_file):
+from gfm import gfm
+
+
+def load_file(the_file):
     with open(the_file, 'r') as data:
         return data.read()
 
